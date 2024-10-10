@@ -19,3 +19,26 @@ docker run --name mongo-container --network my-net -d mongo
 ```bash
 docker run --network my-net -p 3000:3000 --name mongo-server sidhyaasutosh/mongo-server:<tag>
 ```
+
+
+# Use Kubernates
+
+1. Run Multiple container in same pods
+2. Run Each container in seperated pod
+
+- Configure Deployment and service yml
+- Check minikube is running or not if not then first start minikube
+
+# NEXT
+1. Run deployment
+```bash
+kubectl apply -f deployment.yml
+```
+2. Run service
+```bash
+kubectl apply -f deployment.yml
+```
+3. Services
+```bash
+minikube service <service_name>
+```
